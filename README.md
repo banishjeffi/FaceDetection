@@ -1,14 +1,3 @@
-## 💫 About Developer:
-
-### Banish J
-
-🤖 AI & ML Developer | Data Science & Analytics Expert<br>🌐 Web Apps & IoT Skilled | Awesome UI Creator<br>💻 AI is my main focus! 👾
-
-## 📞 Contact
-##### **☎️**   [9444333914](tel:9444333914)
-##### **📧**  mail@banish.in
-##### **🌐**  [Banish](https://www.banish.in)
-
 ## Core Concept
 
 ***This code captures video from the webcam, detects faces in real-time using the Haar Cascade Classifier, and draws rectangles around the detected faces. The video feed is displayed in a window, and the program can be terminated by pressing the 'Esc' key.***
@@ -129,3 +118,14 @@ cv2.destroyAllWindows()`
 
 -   `cam.release()`: Releases the webcam resource.
 -   `cv2.destroyAllWindows()`: Closes all OpenCV windows.
+
+## 💫 About Developer:
+
+### Banish J
+
+🤖 AI & ML Developer | Data Science & Analytics Expert<br>🌐 Web Apps & IoT Skilled | Awesome UI Creator<br>💻 AI is my main focus! 👾
+
+## 📞 Contact
+##### **☎️**   [9444333914](tel:9444333914)
+##### **📧**  mail@banish.in
+##### **🌐**  [Banish](https://www.banish.in)
