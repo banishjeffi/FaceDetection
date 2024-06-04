@@ -75,14 +75,29 @@ python
 
 
 
- `for (x, y, w, h) in face:
-        cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), 2)` 
+	 `for (x, y, w, h) in face:
+        x1,y1=x+w, y+h
+
+        cv2.line(img, (x,y), (x+30, y),(0, 255, 0), 6)
+        cv2.line(img, (x,y), (x, y+30),(0, 255, 0), 6)
+
+        cv2.line(img, (x1,y), (x1-30, y),(0, 255, 0), 6)
+        cv2.line(img, (x1,y), (x1, y+30),(0, 255, 0), 6)
+
+        cv2.line(img, (x,y1), (x+30, y1),(0, 255, 0), 6)
+        cv2.line(img, (x,y1), (x, y1-30),(0, 255, 0), 6)
+
+        cv2.line(img, (x1,y1), (x1-30, y1),(0, 255, 0), 6)
+        cv2.line(img, (x1,y1), (x1, y1-30),(0, 255, 0), 6)` 
 
 -   Iterates over the list of detected faces. For each face, a rectangle is drawn on the original image (`img`):
     -   `(x, y)`: The top-left corner of the rectangle.
-    -   `(x+w, y+h)`: The bottom-right corner of the rectangle.
+    -   `(x, y1)`: The bottom-left corner of the rectangle.
+    -   `(x1, y)`: The bottom-right corner of the rectangle.
+    -   `(x1, y1)`: The bottom-leftcorner of the rectangle.
     -   `(0, 0, 255)`: The color of the rectangle (red in BGR format).
     -   `2`: The thickness of the rectangle's border.
+
 
 ### Displaying the Image with Detected Faces
 
